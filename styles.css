@@ -1,0 +1,199 @@
+/*
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Font
+
+- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+- Weights: 400, 500, 700 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root{
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%)
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 100vh;
+}
+
+.container{
+    padding: 30px;
+}
+header h1{
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+header p{
+    color: var(--dark-grayish-magenta);
+    margin: 10px auto;
+    font-weight: 400;
+}
+
+.rating{
+    height: 70px;
+    background-color: var(--light-grayish-magenta);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.stars{
+    display: block;
+    padding: 10px;
+}
+.rating p{
+    font-weight: 700;
+    color: var(--very-dark-magenta)
+}
+
+.review{
+    background-color: var(--very-dark-magenta);
+    margin: 10px auto;
+    border-radius: 10px;
+    color: var(--light-grayish-magenta);
+}
+.review header{
+    display: flex;
+    align-items: center;
+}
+.review header img{
+    flex: 0.2;
+    border-radius: 50%;
+    transform: scale(0.5);
+    margin-left: -15px;
+}
+.review .header-content{
+    flex: 0.8;
+    text-align: left;
+    line-height: 0.5rem;
+}
+.review .header-content p{
+    color: var(--dark-grayish-magenta); 
+    font-weight: 700;
+    font-size: 12px;
+}
+.review header{
+    padding-left: 20px;
+}
+.review-content{
+    padding: 0 30px;
+    text-align: left;
+    padding-bottom: 20px;
+    line-height: 1.3rem;
+}
+
+
+
+@media only screen and (min-width: 375px){
+    body{
+        background: url(images/bg-pattern-top-mobile.svg) top left no-repeat, url(images/bg-pattern-bottom-mobile.svg) bottom right no-repeat;
+    }
+    
+    header h1{
+        padding: 10px 40px;
+    }
+
+    .rating:first-of-type{
+        margin-top: 40px;
+    }
+
+    .review:first-of-type{
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 1440px){
+    body{
+        background: url(images/bg-pattern-top-desktop.svg) top left no-repeat, url(images/bg-pattern-bottom-desktop.svg) bottom right no-repeat;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 150px;
+    }
+    .container-header{
+        flex: 0.5;
+        text-align: left;
+        padding: 30px;
+        margin: 10px auto;
+
+    }
+    .container-header h1 {
+        width: 400px;
+		font-size: 40px;
+		line-height: 40px;
+        margin: 0 -40px;
+	}
+
+	.container-header p {
+		font-size: 15px;
+		line-height: 25px;
+        width: 400px;
+        margin: 10px 0px;
+	}
+    .container section{
+        flex: 0.5;
+    }
+    .rating{
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .rating:nth-of-type(2){
+        margin-right: 40px;
+    }
+    .rating:nth-of-type(3){
+        margin-left: 150px;
+    }
+
+    .container main{
+        display: inline-block;
+    }
+    .review{
+        display: inline-block;
+		width: 30%;
+		margin: 0;
+		vertical-align: top;
+        padding: 20px 0;
+	}
+	.review:nth-child(2) {
+		margin: 75px 25px 0;
+		
+	}
+	.review:nth-child(3) {
+		margin-top: 100px;
+	}
+
+    footer{
+        margin-top: 600px;
+    }
+}
+
+@media only screen and (min-width: 2390px){
+    .rating{
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .rating:nth-of-type(2){
+        margin-left: 400px;
+    }
+    .rating:nth-of-type(3){
+        margin-left: 450px;
+    }
+}  
