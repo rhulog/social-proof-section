@@ -29,9 +29,7 @@ Users should be able to:
 
 
 ### Links
-
-- Solution URL: 
-- Live Site URL: 
+- Live Site URL: https://rhulog.github.io/social-proof-section/
 
 ## My process
 I designed this mobile-first. Laid out the HTML, added base styles to CSS and then added media queries and related styles for respective mobile and laptop screens.
