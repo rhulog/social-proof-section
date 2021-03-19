@@ -149,13 +149,16 @@ header p{
     .container section{
         flex: 0.5;
     }
+
+    .rating > *{
+        display: inline-block;
+        margin-top: 15px;
+    }
     .rating{
         width: 400px;
-        display: flex;
-        align-items: center;
     }
     .rating:nth-of-type(2){
-        margin-right: 40px;
+        margin-left: 100px;
     }
     .rating:nth-of-type(3){
         margin-left: 150px;
@@ -181,6 +184,22 @@ header p{
 
     footer{
         margin-top: 600px;
+    }
+}
+
+@media only screen and (min-width: 1550px) and (max-width: 2390px){
+    .rating > *{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .rating{
+        width: 600px;
+    }
+    .rating:nth-of-type(2){
+        margin-left: 100px;
+    }
+    .rating:nth-of-type(3){
+        margin-left: 150px;
     }
 }
 
